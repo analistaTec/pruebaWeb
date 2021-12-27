@@ -4,8 +4,7 @@
 }
 
 html {   
-    width: auto;
-    height: auto;
+    
     font-size: 62.5%;
     background-color: black;
 }
@@ -43,8 +42,8 @@ body{
     text-decoration: none;
 }
 
-#test-title{
 
+#title{
     color: azure;
     text-align: center;
     margin-top: 30px;
@@ -53,16 +52,13 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 200px;
     height: 50px;
-
 }
 .ilustracion{
     display: grid;
     grid-column: auto 720px;
     grid-row: 405px;
     gap: 12px;
-    
-    align-items: stretch;
-    
+    align-items: stretch;  
 }
 .ilustracion div:nth-child(1){
     background-color: rgb(42, 138, 211);
@@ -79,11 +75,34 @@ body{
 }
 .ilustracion div:nth-child(2){
     grid-column: 2/3;
-     
-}
-
-div{
-    background-color: papayawhip;
 }
 
 
+.foot{
+    display: flex;
+    flex-flow: row wrap;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.flex-items{
+    background: rgb(99, 98, 98);
+    padding: 5px;
+    width: 32.5%;
+    margin-top: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+}
+.foot .flex-items:nth-child(2){
+    display: grid;
+    
+    grid-column: 1fr 1fr 1fr 1fr;
+}
+
+.foot .flex-items:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
